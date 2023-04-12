@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head"
+    "main"
+    "footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+main {
+  background-color: bisque;
+  padding: 1rem 0;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.logo {
+  width: 18%;
+}
+
+.solid__border {
+  border: solid black 0.3rem;
+}
+
+video {
+  width: 90%;
+  display: none;
+  margin: 0 5%;
+}
+
+.home__gallery {
+  margin: 2rem;
+}
+
+.team__title {
+  font-size: 24px;
+  background-color: rgb(0, 0, 0, 0.3);
+  margin: auto;
+  padding: 2rem;
+  width: 90%;
+  text-align: center;
+}
+
+.card {
+  background-color: #a6444c;
+  overflow: hidden;
+  color: white;
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+  padding: 1rem;
+  text-align: left;
+  border: solid black 2px;
+}
+
+.card__photo {
+  width: 100%;
+}
+
+.card__title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  -webkit-text-stroke: 1.5px black;
+}
+
+.card__photo--circle {
+  border-radius: 60%;
+}
+
+.card__p {
+  font-weight: 100;
+}
+
+.table__paragraph {
+  font-size: 0, 5rem;
+  margin-bottom: 1rem;
+  margin: 10px 10px;
+}
+
+.table__email {
+  position: relative;
+  left: 18px;
+}
+
+.button {
+  font-weight: bold;
+  padding: 5px;
+  margin: 8px;
+  border: 1px solid #ccc;
+  background: #eeeeee;
+  border-radius: 8px 8px 8px 8px;
+  width: 95%;
+  height: 4rem;
+}
+
+.products {
+  text-align: center;
+}
+
+.products--style {
+  text-align: center;
+  font-size: 2rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.products__title--bg {
+  background-color: rgb(255, 255, 255, 0.6);
+  color: black;
+  margin: 0.4rem;
+}
+
+footer {
+  background-color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+.footer__title {
+  color: white;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 0 2rem;
+}
+
+.footer__rights {
+  font-size: 12px;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.socials__icons {
+  width: 30%;
+  background-color: #ccc;
+  text-align: center;
+  margin: 0.5rem 33%;
+}
+
+.us__img {
+  margin: 0.3rem 0;
+}
+
+.products__page {
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid black 2px;
+}
+
+.products__title {
+  background-color: red;
+  color: white;
+  margin: 0 1.5rem;
+  padding: 0.5rem;
+  text-align: center;
+  -webkit-text-stroke: 3px black;
+  font-size: 3rem;
+}
+
+.points {
+  display: flex;
+  justify-content: space-around;
+}
+
+.news__start {
+  background-color: #4e1a1e;
+  overflow: hidden;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: left;
+  border: solid black 2px;
+  margin: 2rem 0.5rem;
+}
+
+.card__title__v2 {
+  font-size: 1.2rem;
+  margin: 0.2rem auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: solid black 2px;
+}
+
+.social__media {
+  width: 10%;
+}
+
+@media (min-width: 768px) {
+  video {
+    display: flex;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrap__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .home_team {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  .team__claudio,
+  .team__eduardo {
+    width: 40%;
+  }
+
+  .products__1,
+  .products__2 {
+    width: 43%;
+  }
+
+  .footer__rights {
+    font-size: 24px;
+  }
+
+  .us__img {
+    width: 33%;
+  }
+
+  .card__p {
+    font-size: 20px;
+  }
+
+  .products__page__img {
+    height: 250px;
+  }
+
+  .table__gmail__card {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .news__article {
+    display: flex;
+  }
+
+  .news__img {
+    height: 100%;
+    width: 50%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .news__img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .news__news {
+    height: 100%;
+    width: 50%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .products__page__img {
+    height: 450px;
+  }
+
+  .wrap__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+  }
+
+  .logo {
+    width: 5%;
+  }
+
+  .footer__title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials {
+    display: flex;
+    justify-content: center;
+  }
+
+  .socials__icons {
+    width: 20%;
+  }
+}
