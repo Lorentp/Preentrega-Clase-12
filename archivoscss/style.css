@@ -42,12 +42,6 @@ main {
   border: solid black 0.3rem;
 }
 
-video {
-  width: 90%;
-  display: none;
-  margin: 0 5%;
-}
-
 .home__gallery {
   margin: 2rem;
 }
@@ -206,10 +200,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  video {
-    display: flex;
-  }
-
   .card {
     display: flex;
     flex-direction: column;
